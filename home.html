@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>G.K Website</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+    </style>
+    <script src="GKwebsite.js"></script>
+</head>
+
+<body>
+<div class="scrollupbtn">
+    <i class="fas up">up</i>
+</div>
+<nav class="navbar">
+    <div class="wide">
+        <ul class="menu">
+            <li><a href="home.html" class="menubtn">Homepage</a></li>
+            <li><a href=#education class="menubtn">Education</a></li>
+            <li><a href=#hobbies class="menubtn">Hobbies</a></li>
+            <li><a href=#contact class="menubtn">Contact</a></li>
+        </ul>
+        <div class="menubtn">
+            <i class="fas bars"></i>
+        </div>
+    </div>
+</nav>
+
+<section class="home" id="home">
+    <div class="wide">
+        <div class="homecont">
+            <div class="text1">Hello, welcome to</div>
+            <div class="text2">Gal Katz's</div>
+            <div class="text3">Website</div>
+        </div>
+    </div>
+</section>
+
+<section class="education" id="education">
+    <div class="wide">
+        <h1 class="title">Education</h1>
+        <div class="educationcont">
+            <div class="column left">
+                <img src="media/education-edge-core-wifi.jpg" alt="">
+            </div>
+            <div class="column right">
+                <div class="text">Gal Katz, Computer Science student</div>
+                <p>Started Computer Science B.S.C at IDC in 2020 during COVID-19 pandemic</p>
+                <a href="media/GalKatz-C.V.pdf" download>Download CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hobbies" id="hobbies">
+    <div class="wide">
+        <h1 class="title">Hobbies</h1>
+        <div class="hobbiescont">
+            <div class="card">
+                <div class="box">
+                    <i class="paintbrush"></i>
+                    <div class="text">HPT</div>
+                    <p>I'm a long time fan of Hapoel Petach Tikva, season ticket holder for a decade</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="chartline"></i>
+                    <div class="text">Olympic Games</div>
+                    <p>Best times of my life are during the Olympic Games, 10 straight hours of high level live sports</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <i class="someclass"></i>
+                    <div class="text">Space</div>
+                    <p>I'm a really huge fan of space exploration and study, I've read a lot of books on the subject</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="wide">
+        <h1 class="title">Contact me</h1>
+        <div class="contactcont">
+            <div class="column left">
+                <div class="text">Contact me</div>
+                <p>you can contact me via:</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="userlogo"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="subtitle">Gal Katz</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="userlogo2"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="subtitle">Kfar Sirkin, Israel</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="userlogo3"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="subtitle">mymail@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Send a message</div>
+                <form action="https://formspree.io/f/mvolgkla" method="post">
+                    <div class="fields">
+                        <div class="field fullname">
+                            <label>
+                                <input type="text" name="contact_fulltname" placeholder="Full Name" required>
+                            </label><br>
+                        </div>
+                        <div class="field phone">
+                            <label>
+                                <input type="tel" pattern="[0-9]*" name="contact_phone" placeholder="Phone" required>
+                            </label><br>
+                        </div>
+                        <div class="field email">
+                            <label>
+                                <input type="email" name="contact_mail" placeholder="E-Mail" required>
+                            </label><br>
+                        </div>
+                        <div class="field subject">
+                            <label>
+                                <input type="text" name="contact_subject" placeholder="Subject" required>
+                            </label><br>
+                        </div>
+                        <div class="field textarea">
+                            <label>
+                                <textarea cols="30" rows="10" placeholder="Message..." required></textarea>
+                            </label><br>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <span>Created by <a href="home.html">Gal Katz</a></span>
+</footer>
+</body>
+</html>
